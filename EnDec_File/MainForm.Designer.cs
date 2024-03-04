@@ -62,12 +62,36 @@
             this.Btn_CaesarOpenFileDec = new System.Windows.Forms.Button();
             this.Lbl_5 = new System.Windows.Forms.Label();
             this.Lbl_6 = new System.Windows.Forms.Label();
+            this.Panel_CaesarText = new System.Windows.Forms.Panel();
+            this.Panel_CaesarSavingText = new System.Windows.Forms.Panel();
+            this.Btn_CaesarCloseSavingTextPanel = new System.Windows.Forms.Button();
+            this.Lbl_16 = new System.Windows.Forms.Label();
+            this.Lbl_17 = new System.Windows.Forms.Label();
+            this.Lbl_15 = new System.Windows.Forms.Label();
+            this.Btn_CaesarSaveFile = new System.Windows.Forms.Button();
+            this.TB_CaesarCipherSave = new System.Windows.Forms.TextBox();
+            this.CB_CaesarSelectConverse = new System.Windows.Forms.ComboBox();
+            this.Lbl_14 = new System.Windows.Forms.Label();
+            this.Lbl_13 = new System.Windows.Forms.Label();
+            this.Btn_DecreaseFontSize = new System.Windows.Forms.Button();
+            this.Btn_IncreaseFontSize = new System.Windows.Forms.Button();
+            this.Btn_CaesarOpenFile = new System.Windows.Forms.Button();
+            this.Btn_CaesarSave = new System.Windows.Forms.Button();
+            this.Btn_CaesarCalculate = new System.Windows.Forms.Button();
+            this.CB_CaesarSelectAlphabet = new System.Windows.Forms.ComboBox();
+            this.Lbl_12 = new System.Windows.Forms.Label();
+            this.TB_CaesarUserText = new System.Windows.Forms.TextBox();
+            this.Lbl_11 = new System.Windows.Forms.Label();
+            this.Lbl_10 = new System.Windows.Forms.Label();
+            this.Panel_CaesarConvert = new System.Windows.Forms.Panel();
             this.Panel_MainBtn.SuspendLayout();
             this.Panel_СaesarMainBtn.SuspendLayout();
             this.Panel_CaesarFileEncrypt.SuspendLayout();
             this.Panel_CaesarSaveFileEnc.SuspendLayout();
             this.Panel_CaesarFileDecrypt.SuspendLayout();
             this.Panel_CaesarSaveFileDec.SuspendLayout();
+            this.Panel_CaesarText.SuspendLayout();
+            this.Panel_CaesarSavingText.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_MainBtn
@@ -173,7 +197,7 @@
             // 
             // Btn_CaesarText
             // 
-            this.Btn_CaesarText.BackColor = System.Drawing.Color.Red;
+            this.Btn_CaesarText.BackColor = System.Drawing.SystemColors.Window;
             this.Btn_CaesarText.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Btn_CaesarText.Location = new System.Drawing.Point(1, 65);
             this.Btn_CaesarText.Margin = new System.Windows.Forms.Padding(2);
@@ -516,6 +540,288 @@
             this.Lbl_6.Text = "Drag the encrypted file into this window to decrypt it.";
             this.Lbl_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Panel_CaesarText
+            // 
+            this.Panel_CaesarText.AutoSize = true;
+            this.Panel_CaesarText.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.Panel_CaesarText.Controls.Add(this.Panel_CaesarSavingText);
+            this.Panel_CaesarText.Controls.Add(this.Lbl_14);
+            this.Panel_CaesarText.Controls.Add(this.Lbl_13);
+            this.Panel_CaesarText.Controls.Add(this.Btn_DecreaseFontSize);
+            this.Panel_CaesarText.Controls.Add(this.Btn_IncreaseFontSize);
+            this.Panel_CaesarText.Controls.Add(this.Btn_CaesarOpenFile);
+            this.Panel_CaesarText.Controls.Add(this.Btn_CaesarSave);
+            this.Panel_CaesarText.Controls.Add(this.Btn_CaesarCalculate);
+            this.Panel_CaesarText.Controls.Add(this.CB_CaesarSelectAlphabet);
+            this.Panel_CaesarText.Controls.Add(this.Lbl_12);
+            this.Panel_CaesarText.Controls.Add(this.TB_CaesarUserText);
+            this.Panel_CaesarText.Controls.Add(this.Lbl_11);
+            this.Panel_CaesarText.Controls.Add(this.Lbl_10);
+            this.Panel_CaesarText.Controls.Add(this.Panel_CaesarConvert);
+            this.Panel_CaesarText.Enabled = false;
+            this.Panel_CaesarText.Location = new System.Drawing.Point(176, 0);
+            this.Panel_CaesarText.Margin = new System.Windows.Forms.Padding(2);
+            this.Panel_CaesarText.Name = "Panel_CaesarText";
+            this.Panel_CaesarText.Size = new System.Drawing.Size(565, 375);
+            this.Panel_CaesarText.TabIndex = 4;
+            this.Panel_CaesarText.Visible = false;
+            // 
+            // Panel_CaesarSavingText
+            // 
+            this.Panel_CaesarSavingText.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.Panel_CaesarSavingText.Controls.Add(this.Btn_CaesarCloseSavingTextPanel);
+            this.Panel_CaesarSavingText.Controls.Add(this.Lbl_16);
+            this.Panel_CaesarSavingText.Controls.Add(this.Lbl_17);
+            this.Panel_CaesarSavingText.Controls.Add(this.Lbl_15);
+            this.Panel_CaesarSavingText.Controls.Add(this.Btn_CaesarSaveFile);
+            this.Panel_CaesarSavingText.Controls.Add(this.TB_CaesarCipherSave);
+            this.Panel_CaesarSavingText.Controls.Add(this.CB_CaesarSelectConverse);
+            this.Panel_CaesarSavingText.Enabled = false;
+            this.Panel_CaesarSavingText.Location = new System.Drawing.Point(104, 88);
+            this.Panel_CaesarSavingText.Margin = new System.Windows.Forms.Padding(2);
+            this.Panel_CaesarSavingText.Name = "Panel_CaesarSavingText";
+            this.Panel_CaesarSavingText.Size = new System.Drawing.Size(352, 224);
+            this.Panel_CaesarSavingText.TabIndex = 24;
+            this.Panel_CaesarSavingText.Visible = false;
+            // 
+            // Btn_CaesarCloseSavingTextPanel
+            // 
+            this.Btn_CaesarCloseSavingTextPanel.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_CaesarCloseSavingTextPanel.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_CaesarCloseSavingTextPanel.Location = new System.Drawing.Point(327, 3);
+            this.Btn_CaesarCloseSavingTextPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_CaesarCloseSavingTextPanel.Name = "Btn_CaesarCloseSavingTextPanel";
+            this.Btn_CaesarCloseSavingTextPanel.Size = new System.Drawing.Size(22, 20);
+            this.Btn_CaesarCloseSavingTextPanel.TabIndex = 20;
+            this.Btn_CaesarCloseSavingTextPanel.Text = "X";
+            this.Btn_CaesarCloseSavingTextPanel.UseVisualStyleBackColor = false;
+            // 
+            // Lbl_16
+            // 
+            this.Lbl_16.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_16.Location = new System.Drawing.Point(6, 40);
+            this.Lbl_16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_16.Name = "Lbl_16";
+            this.Lbl_16.Size = new System.Drawing.Size(86, 18);
+            this.Lbl_16.TabIndex = 62;
+            this.Lbl_16.Text = "Conversion:";
+            this.Lbl_16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Lbl_17
+            // 
+            this.Lbl_17.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_17.Location = new System.Drawing.Point(224, 40);
+            this.Lbl_17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_17.Name = "Lbl_17";
+            this.Lbl_17.Size = new System.Drawing.Size(116, 18);
+            this.Lbl_17.TabIndex = 20;
+            this.Lbl_17.Text = "NONE";
+            this.Lbl_17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Lbl_15
+            // 
+            this.Lbl_15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_15.Location = new System.Drawing.Point(10, 4);
+            this.Lbl_15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_15.Name = "Lbl_15";
+            this.Lbl_15.Size = new System.Drawing.Size(330, 26);
+            this.Lbl_15.TabIndex = 20;
+            this.Lbl_15.Text = "CAESAR CIPHER SAVING SETTINGS";
+            this.Lbl_15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Btn_CaesarSaveFile
+            // 
+            this.Btn_CaesarSaveFile.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_CaesarSaveFile.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_CaesarSaveFile.Location = new System.Drawing.Point(96, 191);
+            this.Btn_CaesarSaveFile.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_CaesarSaveFile.Name = "Btn_CaesarSaveFile";
+            this.Btn_CaesarSaveFile.Size = new System.Drawing.Size(161, 29);
+            this.Btn_CaesarSaveFile.TabIndex = 20;
+            this.Btn_CaesarSaveFile.Text = "SAVE TO FILE";
+            this.Btn_CaesarSaveFile.UseVisualStyleBackColor = false;
+            // 
+            // TB_CaesarCipherSave
+            // 
+            this.TB_CaesarCipherSave.BackColor = System.Drawing.SystemColors.Window;
+            this.TB_CaesarCipherSave.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TB_CaesarCipherSave.Location = new System.Drawing.Point(10, 64);
+            this.TB_CaesarCipherSave.Margin = new System.Windows.Forms.Padding(2);
+            this.TB_CaesarCipherSave.Multiline = true;
+            this.TB_CaesarCipherSave.Name = "TB_CaesarCipherSave";
+            this.TB_CaesarCipherSave.ReadOnly = true;
+            this.TB_CaesarCipherSave.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TB_CaesarCipherSave.Size = new System.Drawing.Size(331, 124);
+            this.TB_CaesarCipherSave.TabIndex = 60;
+            // 
+            // CB_CaesarSelectConverse
+            // 
+            this.CB_CaesarSelectConverse.BackColor = System.Drawing.SystemColors.Window;
+            this.CB_CaesarSelectConverse.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CB_CaesarSelectConverse.FormattingEnabled = true;
+            this.CB_CaesarSelectConverse.Location = new System.Drawing.Point(97, 40);
+            this.CB_CaesarSelectConverse.Margin = new System.Windows.Forms.Padding(2);
+            this.CB_CaesarSelectConverse.Name = "CB_CaesarSelectConverse";
+            this.CB_CaesarSelectConverse.Size = new System.Drawing.Size(123, 20);
+            this.CB_CaesarSelectConverse.TabIndex = 20;
+            // 
+            // Lbl_14
+            // 
+            this.Lbl_14.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_14.Location = new System.Drawing.Point(108, 160);
+            this.Lbl_14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_14.Name = "Lbl_14";
+            this.Lbl_14.Size = new System.Drawing.Size(176, 20);
+            this.Lbl_14.TabIndex = 21;
+            this.Lbl_14.Text = "Converted text:";
+            this.Lbl_14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Lbl_13
+            // 
+            this.Lbl_13.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_13.Location = new System.Drawing.Point(8, 160);
+            this.Lbl_13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_13.Name = "Lbl_13";
+            this.Lbl_13.Size = new System.Drawing.Size(96, 20);
+            this.Lbl_13.TabIndex = 20;
+            this.Lbl_13.Text = "Shift:";
+            this.Lbl_13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Btn_DecreaseFontSize
+            // 
+            this.Btn_DecreaseFontSize.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_DecreaseFontSize.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_DecreaseFontSize.Location = new System.Drawing.Point(522, 49);
+            this.Btn_DecreaseFontSize.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_DecreaseFontSize.Name = "Btn_DecreaseFontSize";
+            this.Btn_DecreaseFontSize.Size = new System.Drawing.Size(30, 21);
+            this.Btn_DecreaseFontSize.TabIndex = 19;
+            this.Btn_DecreaseFontSize.Text = "А-";
+            this.Btn_DecreaseFontSize.UseVisualStyleBackColor = false;
+            // 
+            // Btn_IncreaseFontSize
+            // 
+            this.Btn_IncreaseFontSize.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_IncreaseFontSize.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_IncreaseFontSize.Location = new System.Drawing.Point(488, 49);
+            this.Btn_IncreaseFontSize.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_IncreaseFontSize.Name = "Btn_IncreaseFontSize";
+            this.Btn_IncreaseFontSize.Size = new System.Drawing.Size(30, 21);
+            this.Btn_IncreaseFontSize.TabIndex = 18;
+            this.Btn_IncreaseFontSize.Text = "А+";
+            this.Btn_IncreaseFontSize.UseVisualStyleBackColor = false;
+            // 
+            // Btn_CaesarOpenFile
+            // 
+            this.Btn_CaesarOpenFile.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_CaesarOpenFile.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_CaesarOpenFile.Location = new System.Drawing.Point(374, 132);
+            this.Btn_CaesarOpenFile.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_CaesarOpenFile.Name = "Btn_CaesarOpenFile";
+            this.Btn_CaesarOpenFile.Size = new System.Drawing.Size(87, 21);
+            this.Btn_CaesarOpenFile.TabIndex = 17;
+            this.Btn_CaesarOpenFile.Text = "OPEN";
+            this.Btn_CaesarOpenFile.UseVisualStyleBackColor = false;
+            // 
+            // Btn_CaesarSave
+            // 
+            this.Btn_CaesarSave.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_CaesarSave.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_CaesarSave.Location = new System.Drawing.Point(282, 132);
+            this.Btn_CaesarSave.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_CaesarSave.Name = "Btn_CaesarSave";
+            this.Btn_CaesarSave.Size = new System.Drawing.Size(87, 21);
+            this.Btn_CaesarSave.TabIndex = 16;
+            this.Btn_CaesarSave.Text = "SAVE";
+            this.Btn_CaesarSave.UseVisualStyleBackColor = false;
+            // 
+            // Btn_CaesarCalculate
+            // 
+            this.Btn_CaesarCalculate.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_CaesarCalculate.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_CaesarCalculate.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Btn_CaesarCalculate.Location = new System.Drawing.Point(465, 132);
+            this.Btn_CaesarCalculate.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_CaesarCalculate.Name = "Btn_CaesarCalculate";
+            this.Btn_CaesarCalculate.Size = new System.Drawing.Size(87, 21);
+            this.Btn_CaesarCalculate.TabIndex = 15;
+            this.Btn_CaesarCalculate.Text = "CALCULATE";
+            this.Btn_CaesarCalculate.UseVisualStyleBackColor = false;
+            // 
+            // CB_CaesarSelectAlphabet
+            // 
+            this.CB_CaesarSelectAlphabet.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CB_CaesarSelectAlphabet.FormattingEnabled = true;
+            this.CB_CaesarSelectAlphabet.Location = new System.Drawing.Point(104, 133);
+            this.CB_CaesarSelectAlphabet.Margin = new System.Windows.Forms.Padding(2);
+            this.CB_CaesarSelectAlphabet.Name = "CB_CaesarSelectAlphabet";
+            this.CB_CaesarSelectAlphabet.Size = new System.Drawing.Size(173, 20);
+            this.CB_CaesarSelectAlphabet.TabIndex = 5;
+            // 
+            // Lbl_12
+            // 
+            this.Lbl_12.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_12.Location = new System.Drawing.Point(8, 129);
+            this.Lbl_12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_12.Name = "Lbl_12";
+            this.Lbl_12.Size = new System.Drawing.Size(95, 22);
+            this.Lbl_12.TabIndex = 4;
+            this.Lbl_12.Text = "Alphabet:";
+            this.Lbl_12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TB_CaesarUserText
+            // 
+            this.TB_CaesarUserText.AllowDrop = true;
+            this.TB_CaesarUserText.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TB_CaesarUserText.Location = new System.Drawing.Point(8, 72);
+            this.TB_CaesarUserText.Margin = new System.Windows.Forms.Padding(2);
+            this.TB_CaesarUserText.Multiline = true;
+            this.TB_CaesarUserText.Name = "TB_CaesarUserText";
+            this.TB_CaesarUserText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TB_CaesarUserText.Size = new System.Drawing.Size(545, 55);
+            this.TB_CaesarUserText.TabIndex = 3;
+            this.TB_CaesarUserText.Text = "Enter text manually or drag and drop a .txt file ...";
+            // 
+            // Lbl_11
+            // 
+            this.Lbl_11.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_11.Location = new System.Drawing.Point(8, 38);
+            this.Lbl_11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_11.Name = "Lbl_11";
+            this.Lbl_11.Size = new System.Drawing.Size(99, 31);
+            this.Lbl_11.TabIndex = 2;
+            this.Lbl_11.Text = "Input text:";
+            this.Lbl_11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Lbl_10
+            // 
+            this.Lbl_10.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_10.Location = new System.Drawing.Point(136, 10);
+            this.Lbl_10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_10.Name = "Lbl_10";
+            this.Lbl_10.Size = new System.Drawing.Size(296, 34);
+            this.Lbl_10.TabIndex = 1;
+            this.Lbl_10.Text = "CAESAR CIPHER";
+            this.Lbl_10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Panel_CaesarConvert
+            // 
+            this.Panel_CaesarConvert.AutoScroll = true;
+            this.Panel_CaesarConvert.BackColor = System.Drawing.Color.Lavender;
+            this.Panel_CaesarConvert.Location = new System.Drawing.Point(8, 184);
+            this.Panel_CaesarConvert.Margin = new System.Windows.Forms.Padding(2);
+            this.Panel_CaesarConvert.Name = "Panel_CaesarConvert";
+            this.Panel_CaesarConvert.Size = new System.Drawing.Size(544, 181);
+            this.Panel_CaesarConvert.TabIndex = 14;
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -524,6 +830,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(738, 374);
+            this.Controls.Add(this.Panel_CaesarText);
             this.Controls.Add(this.Panel_MainBtn);
             this.Controls.Add(this.Panel_CaesarFileDecrypt);
             this.Controls.Add(this.Panel_CaesarFileEncrypt);
@@ -546,6 +853,10 @@
             this.Panel_CaesarFileDecrypt.PerformLayout();
             this.Panel_CaesarSaveFileDec.ResumeLayout(false);
             this.Panel_CaesarSaveFileDec.PerformLayout();
+            this.Panel_CaesarText.ResumeLayout(false);
+            this.Panel_CaesarText.PerformLayout();
+            this.Panel_CaesarSavingText.ResumeLayout(false);
+            this.Panel_CaesarSavingText.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -586,5 +897,27 @@
         private System.Windows.Forms.Button Btn_CaesarOpenFileDec;
         private System.Windows.Forms.Label Lbl_5;
         private System.Windows.Forms.Label Lbl_6;
+        private System.Windows.Forms.Panel Panel_CaesarText;
+        private System.Windows.Forms.Panel Panel_CaesarSavingText;
+        private System.Windows.Forms.Button Btn_CaesarCloseSavingTextPanel;
+        private System.Windows.Forms.Label Lbl_16;
+        private System.Windows.Forms.Label Lbl_17;
+        private System.Windows.Forms.Label Lbl_15;
+        private System.Windows.Forms.Button Btn_CaesarSaveFile;
+        private System.Windows.Forms.TextBox TB_CaesarCipherSave;
+        private System.Windows.Forms.ComboBox CB_CaesarSelectConverse;
+        private System.Windows.Forms.Label Lbl_14;
+        private System.Windows.Forms.Label Lbl_13;
+        private System.Windows.Forms.Button Btn_DecreaseFontSize;
+        private System.Windows.Forms.Button Btn_IncreaseFontSize;
+        private System.Windows.Forms.Button Btn_CaesarOpenFile;
+        private System.Windows.Forms.Button Btn_CaesarSave;
+        private System.Windows.Forms.Button Btn_CaesarCalculate;
+        private System.Windows.Forms.ComboBox CB_CaesarSelectAlphabet;
+        private System.Windows.Forms.Label Lbl_12;
+        private System.Windows.Forms.TextBox TB_CaesarUserText;
+        private System.Windows.Forms.Label Lbl_11;
+        private System.Windows.Forms.Label Lbl_10;
+        private System.Windows.Forms.Panel Panel_CaesarConvert;
     }
 }
