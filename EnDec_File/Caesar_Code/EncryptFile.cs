@@ -13,8 +13,8 @@ namespace EnDec_File
             Panel_CaesarFileEncrypt.Visible = true;
             Panel_CaesarFileEncrypt.Enabled = true;
 
-            //Panel_CaesarFileDecrypt.Visible = false;
-            //Panel_CaesarFileDecrypt.Enabled = false;
+            Panel_CaesarFileDecrypt.Visible = false;
+            Panel_CaesarFileDecrypt.Enabled = false;
 
             //Panel_CaesarText.Visible = false;
             //Panel_CaesarText.Enabled = false;

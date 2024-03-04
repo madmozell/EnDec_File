@@ -169,6 +169,7 @@
             this.Btn_CaesarDecryptFile.TabIndex = 3;
             this.Btn_CaesarDecryptFile.Text = "DECRYPT FILE";
             this.Btn_CaesarDecryptFile.UseVisualStyleBackColor = false;
+            this.Btn_CaesarDecryptFile.Click += new System.EventHandler(this.Btn_CaesarDecryptFile_Click);
             // 
             // Btn_CaesarText
             // 
@@ -356,6 +357,8 @@
             this.Panel_CaesarFileDecrypt.Size = new System.Drawing.Size(565, 375);
             this.Panel_CaesarFileDecrypt.TabIndex = 3;
             this.Panel_CaesarFileDecrypt.Visible = false;
+            this.Panel_CaesarFileDecrypt.DragDrop += new System.Windows.Forms.DragEventHandler(this.Panel_CaesarFileDecrypt_DragDrop);
+            this.Panel_CaesarFileDecrypt.DragEnter += new System.Windows.Forms.DragEventHandler(this.Panel_CaesarFileDecrypt_DragEnter);
             // 
             // Panel_CaesarSaveFileDec
             // 
@@ -390,6 +393,7 @@
             this.CheckBox_CaesarEnumerateAllCipher.TabIndex = 74;
             this.CheckBox_CaesarEnumerateAllCipher.Text = "Enumerate all variants of ciphergrams";
             this.CheckBox_CaesarEnumerateAllCipher.UseVisualStyleBackColor = true;
+            this.CheckBox_CaesarEnumerateAllCipher.CheckedChanged += new System.EventHandler(this.CheckBox_CaesarEnumerateAllCipher_CheckedChanged);
             // 
             // Lbl_9
             // 
@@ -448,6 +452,7 @@
             this.Btn_SaveDecFile.TabIndex = 22;
             this.Btn_SaveDecFile.Text = "SAVE DECRYPT FILE";
             this.Btn_SaveDecFile.UseVisualStyleBackColor = false;
+            this.Btn_SaveDecFile.Click += new System.EventHandler(this.Btn_SaveDecFile_Click);
             // 
             // Btn_CaesarCloseSaveFileDec
             // 
@@ -460,6 +465,7 @@
             this.Btn_CaesarCloseSaveFileDec.TabIndex = 21;
             this.Btn_CaesarCloseSaveFileDec.Text = "X";
             this.Btn_CaesarCloseSaveFileDec.UseVisualStyleBackColor = false;
+            this.Btn_CaesarCloseSaveFileDec.Click += new System.EventHandler(this.Btn_CaesarCloseSaveFileDec_Click);
             // 
             // Lbl_7
             // 
@@ -484,6 +490,7 @@
             this.Btn_CaesarOpenFileDec.TabIndex = 22;
             this.Btn_CaesarOpenFileDec.Text = "Open the file in Explorer...";
             this.Btn_CaesarOpenFileDec.UseVisualStyleBackColor = false;
+            this.Btn_CaesarOpenFileDec.Click += new System.EventHandler(this.Btn_CaesarOpenFileDec_Click);
             // 
             // Lbl_5
             // 
