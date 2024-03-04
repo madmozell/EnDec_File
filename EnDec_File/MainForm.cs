@@ -72,7 +72,7 @@ namespace EnDec_File
             switch (CB_EncryptMethod.SelectedIndex)
             {
                 case 0:
-                    //PanelComingSoon.Visible = false;
+                    PanelComingSoon.Visible = false;
                     Panel_СaesarMainBtn.Visible = true;
                     Panel_СaesarMainBtn.Enabled = true;
                     Panel_CaesarFileEncrypt.Visible = true;
@@ -87,7 +87,7 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    //PanelComingSoon.Visible = true;
+                    PanelComingSoon.Visible = true;
                     break;
                 case 2:
                     Panel_СaesarMainBtn.Visible = false;
@@ -98,7 +98,7 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    //PanelComingSoon.Visible = true;
+                    PanelComingSoon.Visible = true;
                     break;
                 case 3:
                     Panel_СaesarMainBtn.Visible = false;
@@ -109,7 +109,7 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    //PanelComingSoon.Visible = true;
+                    PanelComingSoon.Visible = true;
                     break;
                 case 4:
                     Panel_СaesarMainBtn.Visible = false;
@@ -120,7 +120,7 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    //PanelComingSoon.Visible = true;
+                    PanelComingSoon.Visible = true;
                     break;
                 case 5:
                     Panel_СaesarMainBtn.Visible = false;
@@ -131,7 +131,7 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    //PanelComingSoon.Visible = true;
+                    PanelComingSoon.Visible = true;
                     break;
             }
         }

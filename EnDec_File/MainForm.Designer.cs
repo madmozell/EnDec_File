@@ -84,6 +84,8 @@
             this.Lbl_11 = new System.Windows.Forms.Label();
             this.Lbl_10 = new System.Windows.Forms.Label();
             this.Panel_CaesarConvert = new System.Windows.Forms.Panel();
+            this.PanelComingSoon = new System.Windows.Forms.Panel();
+            this.Lbl_18 = new System.Windows.Forms.Label();
             this.Panel_MainBtn.SuspendLayout();
             this.Panel_СaesarMainBtn.SuspendLayout();
             this.Panel_CaesarFileEncrypt.SuspendLayout();
@@ -92,6 +94,7 @@
             this.Panel_CaesarSaveFileDec.SuspendLayout();
             this.Panel_CaesarText.SuspendLayout();
             this.Panel_CaesarSavingText.SuspendLayout();
+            this.PanelComingSoon.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_MainBtn
@@ -138,7 +141,7 @@
             // 
             // CB_EncryptMethod
             // 
-            this.CB_EncryptMethod.BackColor = System.Drawing.Color.Red;
+            this.CB_EncryptMethod.BackColor = System.Drawing.SystemColors.Window;
             this.CB_EncryptMethod.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.CB_EncryptMethod.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CB_EncryptMethod.FormattingEnabled = true;
@@ -155,6 +158,7 @@
             this.CB_EncryptMethod.Size = new System.Drawing.Size(162, 20);
             this.CB_EncryptMethod.TabIndex = 2;
             this.CB_EncryptMethod.Text = "Cesar cipher";
+            this.CB_EncryptMethod.SelectedIndexChanged += new System.EventHandler(this.CB_EncryptMethod_SelectedIndexChanged);
             // 
             // Panel_СaesarMainBtn
             // 
@@ -835,6 +839,32 @@
             this.Panel_CaesarConvert.Size = new System.Drawing.Size(544, 181);
             this.Panel_CaesarConvert.TabIndex = 14;
             // 
+            // PanelComingSoon
+            // 
+            this.PanelComingSoon.AllowDrop = true;
+            this.PanelComingSoon.AutoSize = true;
+            this.PanelComingSoon.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.PanelComingSoon.Controls.Add(this.Lbl_18);
+            this.PanelComingSoon.Enabled = false;
+            this.PanelComingSoon.Location = new System.Drawing.Point(176, 0);
+            this.PanelComingSoon.Margin = new System.Windows.Forms.Padding(2);
+            this.PanelComingSoon.Name = "PanelComingSoon";
+            this.PanelComingSoon.Size = new System.Drawing.Size(565, 375);
+            this.PanelComingSoon.TabIndex = 25;
+            this.PanelComingSoon.Visible = false;
+            // 
+            // Lbl_18
+            // 
+            this.Lbl_18.Font = new System.Drawing.Font("Times New Roman", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_18.Location = new System.Drawing.Point(92, 144);
+            this.Lbl_18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_18.Name = "Lbl_18";
+            this.Lbl_18.Size = new System.Drawing.Size(387, 69);
+            this.Lbl_18.TabIndex = 0;
+            this.Lbl_18.Text = "COMING SOON ...";
+            this.Lbl_18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -843,10 +873,11 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(738, 374);
-            this.Controls.Add(this.Panel_CaesarText);
             this.Controls.Add(this.Panel_MainBtn);
-            this.Controls.Add(this.Panel_CaesarFileDecrypt);
             this.Controls.Add(this.Panel_CaesarFileEncrypt);
+            this.Controls.Add(this.PanelComingSoon);
+            this.Controls.Add(this.Panel_CaesarText);
+            this.Controls.Add(this.Panel_CaesarFileDecrypt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -870,6 +901,7 @@
             this.Panel_CaesarText.PerformLayout();
             this.Panel_CaesarSavingText.ResumeLayout(false);
             this.Panel_CaesarSavingText.PerformLayout();
+            this.PanelComingSoon.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -932,5 +964,7 @@
         private System.Windows.Forms.Label Lbl_11;
         private System.Windows.Forms.Label Lbl_10;
         private System.Windows.Forms.Panel Panel_CaesarConvert;
+        private System.Windows.Forms.Panel PanelComingSoon;
+        private System.Windows.Forms.Label Lbl_18;
     }
 }
