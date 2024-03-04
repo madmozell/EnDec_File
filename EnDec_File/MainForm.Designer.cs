@@ -81,6 +81,7 @@
             this.LLbl_Version.TabIndex = 20;
             this.LLbl_Version.TabStop = true;
             this.LLbl_Version.Text = "Version 1.0 (About the program)";
+            this.LLbl_Version.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LLbl_Version_LinkClicked);
             // 
             // Btn_AuthorInfo
             // 
@@ -94,10 +95,11 @@
             this.Btn_AuthorInfo.TabIndex = 4;
             this.Btn_AuthorInfo.Text = "AUTHOR INFO";
             this.Btn_AuthorInfo.UseVisualStyleBackColor = false;
+            this.Btn_AuthorInfo.Click += new System.EventHandler(this.Btn_AuthorInfo_Click);
             // 
             // CB_EncryptMethod
             // 
-            this.CB_EncryptMethod.BackColor = System.Drawing.SystemColors.Window;
+            this.CB_EncryptMethod.BackColor = System.Drawing.Color.Red;
             this.CB_EncryptMethod.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.CB_EncryptMethod.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CB_EncryptMethod.FormattingEnabled = true;
@@ -139,10 +141,11 @@
             this.Btn_CaesarEncryptFile.TabIndex = 0;
             this.Btn_CaesarEncryptFile.Text = "ENCRYPT FILE";
             this.Btn_CaesarEncryptFile.UseVisualStyleBackColor = false;
+            this.Btn_CaesarEncryptFile.Click += new System.EventHandler(this.Btn_CaesarEncryptFile_Click);
             // 
             // Btn_CaesarDecryptFile
             // 
-            this.Btn_CaesarDecryptFile.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_CaesarDecryptFile.BackColor = System.Drawing.Color.Red;
             this.Btn_CaesarDecryptFile.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Btn_CaesarDecryptFile.Location = new System.Drawing.Point(1, 33);
             this.Btn_CaesarDecryptFile.Margin = new System.Windows.Forms.Padding(2);
@@ -154,7 +157,7 @@
             // 
             // Btn_CaesarText
             // 
-            this.Btn_CaesarText.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_CaesarText.BackColor = System.Drawing.Color.Red;
             this.Btn_CaesarText.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Btn_CaesarText.Location = new System.Drawing.Point(1, 65);
             this.Btn_CaesarText.Margin = new System.Windows.Forms.Padding(2);
@@ -178,6 +181,8 @@
             this.Panel_CaesarFileEncrypt.Name = "Panel_CaesarFileEncrypt";
             this.Panel_CaesarFileEncrypt.Size = new System.Drawing.Size(565, 375);
             this.Panel_CaesarFileEncrypt.TabIndex = 2;
+            this.Panel_CaesarFileEncrypt.DragDrop += new System.Windows.Forms.DragEventHandler(this.Panel_CaesarFileEncrypt_DragDrop);
+            this.Panel_CaesarFileEncrypt.DragEnter += new System.Windows.Forms.DragEventHandler(this.Panel_CaesarFileEncrypt_DragEnter);
             // 
             // Panel_CaesarSaveFileEnc
             // 
@@ -256,6 +261,7 @@
             this.Btn_SaveEncFile.TabIndex = 22;
             this.Btn_SaveEncFile.Text = "SAVE ENCRYPT FILE";
             this.Btn_SaveEncFile.UseVisualStyleBackColor = false;
+            this.Btn_SaveEncFile.Click += new System.EventHandler(this.Btn_SaveEncFile_Click);
             // 
             // Btn_CaesarCloseSaveFileEnc
             // 
@@ -268,6 +274,7 @@
             this.Btn_CaesarCloseSaveFileEnc.TabIndex = 21;
             this.Btn_CaesarCloseSaveFileEnc.Text = "X";
             this.Btn_CaesarCloseSaveFileEnc.UseVisualStyleBackColor = false;
+            this.Btn_CaesarCloseSaveFileEnc.Click += new System.EventHandler(this.Btn_CaesarCloseSaveFileEnc_Click);
             // 
             // Lbl_2
             // 
@@ -292,6 +299,7 @@
             this.Btn_CaesarOpenFileEnc.TabIndex = 23;
             this.Btn_CaesarOpenFileEnc.Text = "Open the file in Explorer...";
             this.Btn_CaesarOpenFileEnc.UseVisualStyleBackColor = false;
+            this.Btn_CaesarOpenFileEnc.Click += new System.EventHandler(this.Btn_CaesarOpenFileEnc_Click);
             // 
             // Lbl_0
             // 
