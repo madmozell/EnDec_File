@@ -16,8 +16,8 @@ namespace EnDec_File
             Panel_CaesarFileDecrypt.Visible = false;
             Panel_CaesarFileDecrypt.Enabled = false;
 
-            //Panel_CaesarText.Visible = false;
-            //Panel_CaesarText.Enabled = false;
+            Panel_CaesarText.Visible = false;
+            Panel_CaesarText.Enabled = false;
         }
 
         //Completed !!!

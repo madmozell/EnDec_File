@@ -206,6 +206,7 @@
             this.Btn_CaesarText.TabIndex = 5;
             this.Btn_CaesarText.Text = "TEXT ENCRYPTION";
             this.Btn_CaesarText.UseVisualStyleBackColor = false;
+            this.Btn_CaesarText.Click += new System.EventHandler(this.Btn_CaesarText_Click);
             // 
             // Panel_CaesarFileEncrypt
             // 
@@ -595,6 +596,7 @@
             this.Btn_CaesarCloseSavingTextPanel.TabIndex = 20;
             this.Btn_CaesarCloseSavingTextPanel.Text = "X";
             this.Btn_CaesarCloseSavingTextPanel.UseVisualStyleBackColor = false;
+            this.Btn_CaesarCloseSavingTextPanel.Click += new System.EventHandler(this.Btn_CaesarCloseSavingTextPanel_Click);
             // 
             // Lbl_16
             // 
@@ -643,6 +645,7 @@
             this.Btn_CaesarSaveFile.TabIndex = 20;
             this.Btn_CaesarSaveFile.Text = "SAVE TO FILE";
             this.Btn_CaesarSaveFile.UseVisualStyleBackColor = false;
+            this.Btn_CaesarSaveFile.Click += new System.EventHandler(this.Btn_CaesarSaveFile_Click);
             // 
             // TB_CaesarCipherSave
             // 
@@ -667,6 +670,7 @@
             this.CB_CaesarSelectConverse.Name = "CB_CaesarSelectConverse";
             this.CB_CaesarSelectConverse.Size = new System.Drawing.Size(123, 20);
             this.CB_CaesarSelectConverse.TabIndex = 20;
+            this.CB_CaesarSelectConverse.SelectedIndexChanged += new System.EventHandler(this.CB_CaesarSelectConverse_SelectedIndexChanged);
             // 
             // Lbl_14
             // 
@@ -703,6 +707,7 @@
             this.Btn_DecreaseFontSize.TabIndex = 19;
             this.Btn_DecreaseFontSize.Text = "А-";
             this.Btn_DecreaseFontSize.UseVisualStyleBackColor = false;
+            this.Btn_DecreaseFontSize.Click += new System.EventHandler(this.Btn_DecreaseFontSize_Click);
             // 
             // Btn_IncreaseFontSize
             // 
@@ -715,6 +720,7 @@
             this.Btn_IncreaseFontSize.TabIndex = 18;
             this.Btn_IncreaseFontSize.Text = "А+";
             this.Btn_IncreaseFontSize.UseVisualStyleBackColor = false;
+            this.Btn_IncreaseFontSize.Click += new System.EventHandler(this.Btn_IncreaseFontSize_Click);
             // 
             // Btn_CaesarOpenFile
             // 
@@ -727,6 +733,7 @@
             this.Btn_CaesarOpenFile.TabIndex = 17;
             this.Btn_CaesarOpenFile.Text = "OPEN";
             this.Btn_CaesarOpenFile.UseVisualStyleBackColor = false;
+            this.Btn_CaesarOpenFile.Click += new System.EventHandler(this.Btn_CaesarOpenFile_Click);
             // 
             // Btn_CaesarSave
             // 
@@ -739,6 +746,7 @@
             this.Btn_CaesarSave.TabIndex = 16;
             this.Btn_CaesarSave.Text = "SAVE";
             this.Btn_CaesarSave.UseVisualStyleBackColor = false;
+            this.Btn_CaesarSave.Click += new System.EventHandler(this.Btn_CaesarSave_Click);
             // 
             // Btn_CaesarCalculate
             // 
@@ -752,6 +760,7 @@
             this.Btn_CaesarCalculate.TabIndex = 15;
             this.Btn_CaesarCalculate.Text = "CALCULATE";
             this.Btn_CaesarCalculate.UseVisualStyleBackColor = false;
+            this.Btn_CaesarCalculate.Click += new System.EventHandler(this.Btn_CaesarCalculate_Click);
             // 
             // CB_CaesarSelectAlphabet
             // 
@@ -787,6 +796,10 @@
             this.TB_CaesarUserText.Size = new System.Drawing.Size(545, 55);
             this.TB_CaesarUserText.TabIndex = 3;
             this.TB_CaesarUserText.Text = "Enter text manually or drag and drop a .txt file ...";
+            this.TB_CaesarUserText.DragDrop += new System.Windows.Forms.DragEventHandler(this.TB_CaesarUserText_DragDrop);
+            this.TB_CaesarUserText.DragEnter += new System.Windows.Forms.DragEventHandler(this.TB_CaesarUserText_DragEnter);
+            this.TB_CaesarUserText.Enter += new System.EventHandler(this.TB_CaesarUserText_Enter);
+            this.TB_CaesarUserText.Leave += new System.EventHandler(this.TB_CaesarUserText_Leave);
             // 
             // Lbl_11
             // 

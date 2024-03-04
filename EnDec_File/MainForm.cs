@@ -27,12 +27,12 @@ namespace EnDec_File
         private MainForm()
         {
             InitializeComponent();
-            //Check_UserFile("Caesar_User_Dictionary.txt");
+            Check_UserFile("Caesar_User_Dictionary.txt");
         }
 
         //Completed !!!
         //Checking for the presence of a user file "Caesar_User_Dictionary.txt" in the directory.
-        /*private void Check_UserFile(string file_username)
+        private void Check_UserFile(string file_username)
         {
             string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, file_username);
 
@@ -63,16 +63,16 @@ namespace EnDec_File
             {
                 MessageBox.Show("Error creating Caesar_User_Dictionary.txt file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }*/
+        }
 
         //Completed !!!
         //Select the encryption method: "Cesar", "Trithemius", "Gamma", "DES", "TripleDes", "AES" ciphers.
-        /*private void CB_EncryptMethod_SelectedIndexChanged(object sender, EventArgs e)
+        private void CB_EncryptMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (CB_EncryptMethod.SelectedIndex)
             {
                 case 0:
-                    PanelComingSoon.Visible = false;
+                    //PanelComingSoon.Visible = false;
                     Panel_СaesarMainBtn.Visible = true;
                     Panel_СaesarMainBtn.Enabled = true;
                     Panel_CaesarFileEncrypt.Visible = true;
@@ -87,7 +87,7 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    PanelComingSoon.Visible = true;
+                    //PanelComingSoon.Visible = true;
                     break;
                 case 2:
                     Panel_СaesarMainBtn.Visible = false;
@@ -98,7 +98,7 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    PanelComingSoon.Visible = true;
+                    //PanelComingSoon.Visible = true;
                     break;
                 case 3:
                     Panel_СaesarMainBtn.Visible = false;
@@ -109,7 +109,7 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    PanelComingSoon.Visible = true;
+                    //PanelComingSoon.Visible = true;
                     break;
                 case 4:
                     Panel_СaesarMainBtn.Visible = false;
@@ -120,7 +120,7 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    PanelComingSoon.Visible = true;
+                    //PanelComingSoon.Visible = true;
                     break;
                 case 5:
                     Panel_СaesarMainBtn.Visible = false;
@@ -131,10 +131,10 @@ namespace EnDec_File
                     Panel_CaesarFileDecrypt.Enabled = false;
                     Panel_CaesarText.Visible = false;
                     Panel_CaesarText.Enabled = false;
-                    PanelComingSoon.Visible = true;
+                    //PanelComingSoon.Visible = true;
                     break;
             }
-        }*/
+        }
 
         //Completed !!!
         //Display a message with information about the author.

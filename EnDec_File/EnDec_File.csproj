@@ -48,6 +48,9 @@
     <Compile Include="Caesar_Code\EncryptFile.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Caesar_Code\TextEnDec.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
