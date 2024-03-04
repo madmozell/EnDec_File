@@ -49,10 +49,25 @@
             this.Btn_CaesarOpenFileEnc = new System.Windows.Forms.Button();
             this.Lbl_0 = new System.Windows.Forms.Label();
             this.Lbl_1 = new System.Windows.Forms.Label();
+            this.Panel_CaesarFileDecrypt = new System.Windows.Forms.Panel();
+            this.Panel_CaesarSaveFileDec = new System.Windows.Forms.Panel();
+            this.CheckBox_CaesarEnumerateAllCipher = new System.Windows.Forms.CheckBox();
+            this.Lbl_9 = new System.Windows.Forms.Label();
+            this.TB_CaesarKeyDecrypt = new System.Windows.Forms.TextBox();
+            this.TB_CaesarPathSaveFileDecrypt = new System.Windows.Forms.TextBox();
+            this.Lbl_8 = new System.Windows.Forms.Label();
+            this.Btn_SaveDecFile = new System.Windows.Forms.Button();
+            this.Btn_CaesarCloseSaveFileDec = new System.Windows.Forms.Button();
+            this.Lbl_7 = new System.Windows.Forms.Label();
+            this.Btn_CaesarOpenFileDec = new System.Windows.Forms.Button();
+            this.Lbl_5 = new System.Windows.Forms.Label();
+            this.Lbl_6 = new System.Windows.Forms.Label();
             this.Panel_MainBtn.SuspendLayout();
             this.Panel_СaesarMainBtn.SuspendLayout();
             this.Panel_CaesarFileEncrypt.SuspendLayout();
             this.Panel_CaesarSaveFileEnc.SuspendLayout();
+            this.Panel_CaesarFileDecrypt.SuspendLayout();
+            this.Panel_CaesarSaveFileDec.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_MainBtn
@@ -145,7 +160,7 @@
             // 
             // Btn_CaesarDecryptFile
             // 
-            this.Btn_CaesarDecryptFile.BackColor = System.Drawing.Color.Red;
+            this.Btn_CaesarDecryptFile.BackColor = System.Drawing.SystemColors.Window;
             this.Btn_CaesarDecryptFile.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Btn_CaesarDecryptFile.Location = new System.Drawing.Point(1, 33);
             this.Btn_CaesarDecryptFile.Margin = new System.Windows.Forms.Padding(2);
@@ -325,6 +340,175 @@
             this.Lbl_1.Text = "Drag a file of any format into this window to encrypt it";
             this.Lbl_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Panel_CaesarFileDecrypt
+            // 
+            this.Panel_CaesarFileDecrypt.AllowDrop = true;
+            this.Panel_CaesarFileDecrypt.AutoSize = true;
+            this.Panel_CaesarFileDecrypt.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.Panel_CaesarFileDecrypt.Controls.Add(this.Panel_CaesarSaveFileDec);
+            this.Panel_CaesarFileDecrypt.Controls.Add(this.Btn_CaesarOpenFileDec);
+            this.Panel_CaesarFileDecrypt.Controls.Add(this.Lbl_5);
+            this.Panel_CaesarFileDecrypt.Controls.Add(this.Lbl_6);
+            this.Panel_CaesarFileDecrypt.Enabled = false;
+            this.Panel_CaesarFileDecrypt.Location = new System.Drawing.Point(176, 0);
+            this.Panel_CaesarFileDecrypt.Margin = new System.Windows.Forms.Padding(2);
+            this.Panel_CaesarFileDecrypt.Name = "Panel_CaesarFileDecrypt";
+            this.Panel_CaesarFileDecrypt.Size = new System.Drawing.Size(565, 375);
+            this.Panel_CaesarFileDecrypt.TabIndex = 3;
+            this.Panel_CaesarFileDecrypt.Visible = false;
+            // 
+            // Panel_CaesarSaveFileDec
+            // 
+            this.Panel_CaesarSaveFileDec.AllowDrop = true;
+            this.Panel_CaesarSaveFileDec.AutoSize = true;
+            this.Panel_CaesarSaveFileDec.BackColor = System.Drawing.Color.Lavender;
+            this.Panel_CaesarSaveFileDec.Controls.Add(this.CheckBox_CaesarEnumerateAllCipher);
+            this.Panel_CaesarSaveFileDec.Controls.Add(this.Lbl_9);
+            this.Panel_CaesarSaveFileDec.Controls.Add(this.TB_CaesarKeyDecrypt);
+            this.Panel_CaesarSaveFileDec.Controls.Add(this.TB_CaesarPathSaveFileDecrypt);
+            this.Panel_CaesarSaveFileDec.Controls.Add(this.Lbl_8);
+            this.Panel_CaesarSaveFileDec.Controls.Add(this.Btn_SaveDecFile);
+            this.Panel_CaesarSaveFileDec.Controls.Add(this.Btn_CaesarCloseSaveFileDec);
+            this.Panel_CaesarSaveFileDec.Controls.Add(this.Lbl_7);
+            this.Panel_CaesarSaveFileDec.Enabled = false;
+            this.Panel_CaesarSaveFileDec.Location = new System.Drawing.Point(176, 88);
+            this.Panel_CaesarSaveFileDec.Margin = new System.Windows.Forms.Padding(2);
+            this.Panel_CaesarSaveFileDec.Name = "Panel_CaesarSaveFileDec";
+            this.Panel_CaesarSaveFileDec.Size = new System.Drawing.Size(216, 152);
+            this.Panel_CaesarSaveFileDec.TabIndex = 25;
+            this.Panel_CaesarSaveFileDec.Visible = false;
+            // 
+            // CheckBox_CaesarEnumerateAllCipher
+            // 
+            this.CheckBox_CaesarEnumerateAllCipher.AutoSize = true;
+            this.CheckBox_CaesarEnumerateAllCipher.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CheckBox_CaesarEnumerateAllCipher.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.CheckBox_CaesarEnumerateAllCipher.Location = new System.Drawing.Point(8, 75);
+            this.CheckBox_CaesarEnumerateAllCipher.Name = "CheckBox_CaesarEnumerateAllCipher";
+            this.CheckBox_CaesarEnumerateAllCipher.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CheckBox_CaesarEnumerateAllCipher.Size = new System.Drawing.Size(202, 18);
+            this.CheckBox_CaesarEnumerateAllCipher.TabIndex = 74;
+            this.CheckBox_CaesarEnumerateAllCipher.Text = "Enumerate all variants of ciphergrams";
+            this.CheckBox_CaesarEnumerateAllCipher.UseVisualStyleBackColor = true;
+            // 
+            // Lbl_9
+            // 
+            this.Lbl_9.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_9.Location = new System.Drawing.Point(4, 98);
+            this.Lbl_9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_9.Name = "Lbl_9";
+            this.Lbl_9.Size = new System.Drawing.Size(44, 18);
+            this.Lbl_9.TabIndex = 73;
+            this.Lbl_9.Text = "Path:";
+            this.Lbl_9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TB_CaesarKeyDecrypt
+            // 
+            this.TB_CaesarKeyDecrypt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_CaesarKeyDecrypt.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TB_CaesarKeyDecrypt.Location = new System.Drawing.Point(50, 52);
+            this.TB_CaesarKeyDecrypt.Margin = new System.Windows.Forms.Padding(2);
+            this.TB_CaesarKeyDecrypt.Name = "TB_CaesarKeyDecrypt";
+            this.TB_CaesarKeyDecrypt.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TB_CaesarKeyDecrypt.Size = new System.Drawing.Size(160, 20);
+            this.TB_CaesarKeyDecrypt.TabIndex = 72;
+            // 
+            // TB_CaesarPathSaveFileDecrypt
+            // 
+            this.TB_CaesarPathSaveFileDecrypt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_CaesarPathSaveFileDecrypt.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TB_CaesarPathSaveFileDecrypt.Location = new System.Drawing.Point(50, 97);
+            this.TB_CaesarPathSaveFileDecrypt.Margin = new System.Windows.Forms.Padding(2);
+            this.TB_CaesarPathSaveFileDecrypt.Name = "TB_CaesarPathSaveFileDecrypt";
+            this.TB_CaesarPathSaveFileDecrypt.ReadOnly = true;
+            this.TB_CaesarPathSaveFileDecrypt.Size = new System.Drawing.Size(160, 20);
+            this.TB_CaesarPathSaveFileDecrypt.TabIndex = 69;
+            // 
+            // Lbl_8
+            // 
+            this.Lbl_8.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_8.Location = new System.Drawing.Point(4, 51);
+            this.Lbl_8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_8.Name = "Lbl_8";
+            this.Lbl_8.Size = new System.Drawing.Size(44, 18);
+            this.Lbl_8.TabIndex = 65;
+            this.Lbl_8.Text = "Key:";
+            this.Lbl_8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Btn_SaveDecFile
+            // 
+            this.Btn_SaveDecFile.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_SaveDecFile.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_SaveDecFile.Location = new System.Drawing.Point(7, 123);
+            this.Btn_SaveDecFile.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_SaveDecFile.Name = "Btn_SaveDecFile";
+            this.Btn_SaveDecFile.Size = new System.Drawing.Size(202, 20);
+            this.Btn_SaveDecFile.TabIndex = 22;
+            this.Btn_SaveDecFile.Text = "SAVE DECRYPT FILE";
+            this.Btn_SaveDecFile.UseVisualStyleBackColor = false;
+            // 
+            // Btn_CaesarCloseSaveFileDec
+            // 
+            this.Btn_CaesarCloseSaveFileDec.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_CaesarCloseSaveFileDec.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_CaesarCloseSaveFileDec.Location = new System.Drawing.Point(192, 2);
+            this.Btn_CaesarCloseSaveFileDec.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_CaesarCloseSaveFileDec.Name = "Btn_CaesarCloseSaveFileDec";
+            this.Btn_CaesarCloseSaveFileDec.Size = new System.Drawing.Size(22, 20);
+            this.Btn_CaesarCloseSaveFileDec.TabIndex = 21;
+            this.Btn_CaesarCloseSaveFileDec.Text = "X";
+            this.Btn_CaesarCloseSaveFileDec.UseVisualStyleBackColor = false;
+            // 
+            // Lbl_7
+            // 
+            this.Lbl_7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_7.Location = new System.Drawing.Point(2, 4);
+            this.Lbl_7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_7.Name = "Lbl_7";
+            this.Lbl_7.Size = new System.Drawing.Size(210, 42);
+            this.Lbl_7.TabIndex = 66;
+            this.Lbl_7.Text = "CAESAR CIPHER\r\nSAVE DECRYPT FILE";
+            this.Lbl_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Btn_CaesarOpenFileDec
+            // 
+            this.Btn_CaesarOpenFileDec.BackColor = System.Drawing.SystemColors.Window;
+            this.Btn_CaesarOpenFileDec.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Btn_CaesarOpenFileDec.Location = new System.Drawing.Point(200, 288);
+            this.Btn_CaesarOpenFileDec.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_CaesarOpenFileDec.Name = "Btn_CaesarOpenFileDec";
+            this.Btn_CaesarOpenFileDec.Size = new System.Drawing.Size(161, 31);
+            this.Btn_CaesarOpenFileDec.TabIndex = 22;
+            this.Btn_CaesarOpenFileDec.Text = "Open the file in Explorer...";
+            this.Btn_CaesarOpenFileDec.UseVisualStyleBackColor = false;
+            // 
+            // Lbl_5
+            // 
+            this.Lbl_5.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_5.Location = new System.Drawing.Point(92, 96);
+            this.Lbl_5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_5.Name = "Lbl_5";
+            this.Lbl_5.Size = new System.Drawing.Size(387, 69);
+            this.Lbl_5.TabIndex = 1;
+            this.Lbl_5.Text = "CAESAR CIPHER";
+            this.Lbl_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Lbl_6
+            // 
+            this.Lbl_6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Lbl_6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Lbl_6.Location = new System.Drawing.Point(92, 160);
+            this.Lbl_6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl_6.Name = "Lbl_6";
+            this.Lbl_6.Size = new System.Drawing.Size(387, 69);
+            this.Lbl_6.TabIndex = 0;
+            this.Lbl_6.Text = "Drag the encrypted file into this window to decrypt it.";
+            this.Lbl_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -333,8 +517,9 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(738, 374);
-            this.Controls.Add(this.Panel_CaesarFileEncrypt);
             this.Controls.Add(this.Panel_MainBtn);
+            this.Controls.Add(this.Panel_CaesarFileDecrypt);
+            this.Controls.Add(this.Panel_CaesarFileEncrypt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -350,6 +535,10 @@
             this.Panel_CaesarFileEncrypt.PerformLayout();
             this.Panel_CaesarSaveFileEnc.ResumeLayout(false);
             this.Panel_CaesarSaveFileEnc.PerformLayout();
+            this.Panel_CaesarFileDecrypt.ResumeLayout(false);
+            this.Panel_CaesarFileDecrypt.PerformLayout();
+            this.Panel_CaesarSaveFileDec.ResumeLayout(false);
+            this.Panel_CaesarSaveFileDec.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,5 +566,18 @@
         private System.Windows.Forms.Button Btn_CaesarOpenFileEnc;
         private System.Windows.Forms.Label Lbl_0;
         private System.Windows.Forms.Label Lbl_1;
+        private System.Windows.Forms.Panel Panel_CaesarFileDecrypt;
+        private System.Windows.Forms.Panel Panel_CaesarSaveFileDec;
+        private System.Windows.Forms.CheckBox CheckBox_CaesarEnumerateAllCipher;
+        private System.Windows.Forms.Label Lbl_9;
+        private System.Windows.Forms.TextBox TB_CaesarKeyDecrypt;
+        private System.Windows.Forms.TextBox TB_CaesarPathSaveFileDecrypt;
+        private System.Windows.Forms.Label Lbl_8;
+        private System.Windows.Forms.Button Btn_SaveDecFile;
+        private System.Windows.Forms.Button Btn_CaesarCloseSaveFileDec;
+        private System.Windows.Forms.Label Lbl_7;
+        private System.Windows.Forms.Button Btn_CaesarOpenFileDec;
+        private System.Windows.Forms.Label Lbl_5;
+        private System.Windows.Forms.Label Lbl_6;
     }
 }
