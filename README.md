@@ -194,7 +194,7 @@ Changes №7 (Code to interface №3):
 Changes №8 (Code and Interface):
 
 1. Added panel: "PanelComingSoon" - to inform the user about the development of this section.
-2*. When running and debugging this Windows Forms application multiple times, no bugs or errors were found.
+2. When running and debugging this Windows Forms application multiple times, no bugs or errors were found.
 
 
 
