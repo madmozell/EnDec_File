@@ -1,0 +1,9 @@
+D:\EnDec_File\EnDec_File\bin\Debug\EnDec_File.exe.config
+D:\EnDec_File\EnDec_File\bin\Debug\EnDec_File.exe
+D:\EnDec_File\EnDec_File\bin\Debug\EnDec_File.pdb
+D:\EnDec_File\EnDec_File\obj\Debug\EnDec_File.csproj.AssemblyReference.cache
+D:\EnDec_File\EnDec_File\obj\Debug\EnDec_File.MainForm.resources
+D:\EnDec_File\EnDec_File\obj\Debug\EnDec_File.csproj.GenerateResource.cache
+D:\EnDec_File\EnDec_File\obj\Debug\EnDec_File.csproj.CoreCompileInputs.cache
+D:\EnDec_File\EnDec_File\obj\Debug\EnDec_File.exe
+D:\EnDec_File\EnDec_File\obj\Debug\EnDec_File.pdb

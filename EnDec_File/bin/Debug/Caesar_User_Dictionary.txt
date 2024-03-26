@@ -1,0 +1,13 @@
+You can add your own alphabet to this file. To add your own alphabet, you need to write the following lines to the file:
+1. Announce the creation of the alphabet;
+2. Write the names of your alphabet: "English";
+3. Write down all the characters of the alphabet, taking into account upper and lower case: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+-----
+English
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+
+-----
+Ukrainian
+АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯабвгґдеєжзиіїйклмнопрстуфхцчшщьюя
+
