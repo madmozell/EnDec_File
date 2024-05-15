@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
+using System.Drawing;
 using System.Windows.Forms;
+using System.Text;
 
 namespace EnDec_File
 {
@@ -102,8 +104,8 @@ namespace EnDec_File
             //We get an array of strings with paths to the dragged files.
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
-            //Clearing the line
-            TB_CaesarPathSaveFileEncrypt.Text = "";
+            //Clearing the line ()
+            TB_CaesarPathSaveFileDecrypt.Text = "";
 
             //We check that there is at least one file.
             if (files.Length > 0)

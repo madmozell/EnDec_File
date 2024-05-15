@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
+using System.Drawing;
 using System.Windows.Forms;
+using System.Text;
 
 namespace EnDec_File
 {
@@ -70,7 +72,7 @@ namespace EnDec_File
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
             //Clearing the line
-            TB_CaesarPathSaveFileEncrypt.Text = "";
+            TB_CaesarPathSaveFileEnc.Text = "";
 
             //We check that there is at least one file.
             if (files.Length > 0)
@@ -78,7 +80,7 @@ namespace EnDec_File
                 Panel_CaesarSaveFileEnc.Enabled = true;
                 Panel_CaesarSaveFileEnc.Visible = true;
 
-                TB_CaesarPathSaveFileEncrypt.Text = files[0];
+                TB_CaesarPathSaveFileEnc.Text = files[0];
             }
         }
 
@@ -93,7 +95,7 @@ namespace EnDec_File
                 Panel_CaesarSaveFileEnc.Enabled = true;
                 Panel_CaesarSaveFileEnc.Visible = true;
 
-                TB_CaesarPathSaveFileEncrypt.Text = openFileDialog.FileName;
+                TB_CaesarPathSaveFileEnc.Text = openFileDialog.FileName;
             }
         }
 
@@ -101,7 +103,7 @@ namespace EnDec_File
         //When you press the button, the file is encrypted and saved using the method: "CaesarEncryptAllFile"
         private void Btn_SaveEncFile_Click(object sender, EventArgs e)
         {
-            CaesarEncryptFile(TB_CaesarPathSaveFileEncrypt.Text, TB_CaesarKeyEncrypt.Text);
+            CaesarEncryptFile(TB_CaesarPathSaveFileEnc.Text, TB_CaesarKeyEnc.Text);
         }
 
         //Completed !!!

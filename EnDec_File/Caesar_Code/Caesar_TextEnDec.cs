@@ -52,42 +52,6 @@ namespace EnDec_File
         }
 
         //Completed !!!
-        //The method is used in the event: when the visibility of an element changes: "Panel_CaesarSaveFileEnc"
-        private void ReadingUserDictionaryAlphabet()
-        {
-            try
-            {
-                //We clear all the elements that are in the ComboBox.
-                CB_CaesarSelectAlphabet.Items.Clear();
-
-                using (StreamReader reader = new StreamReader("Caesar_User_Dictionary.txt"))
-                {
-                    string all_line;
-                    while ((all_line = reader.ReadLine()) != null)
-                    {
-                        //If the string contains the delimiter: "-----"
-                        if (all_line.Contains("-----"))
-                        {
-                            //Read the next line after the delimiter
-                            string alphabet_line = reader.ReadLine();
-                            if (alphabet_line != null)
-                            {
-                                //Add the following line to the ComboBox
-                                CB_CaesarSelectAlphabet.Items.Add(alphabet_line);
-                            }
-                        }
-                    }
-                    //By default we set the offset to zero - no encryption.
-                    CB_CaesarSelectAlphabet.SelectedIndex = 0;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error reading file: " + ex.Message);
-            }
-        }
-
-        //Completed !!!
         //Adds elements for offset based on the selected alphabet in the list by method to the element: "Panel_CaesarConvert".
         private void Caesar_CipherCalculateText()
         {
@@ -100,7 +64,7 @@ namespace EnDec_File
             //Variable to store the current alphabet
             string alphabet;
 
-            using (StreamReader reader = new StreamReader("Caesar_User_Dictionary.txt"))
+            using (StreamReader reader = new StreamReader("User_Dictionary.txt"))
             {
                 string all_line;
 
@@ -203,7 +167,7 @@ namespace EnDec_File
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //Completed !!!
-        //When clicked, it opens: "Panel_CesarText" - for manually writing text and executes the method: "ReadingUserDictionaryAlphabet".
+        //When clicked, it opens: "Panel_CesarText" - for manually writing text and executes the method: "Caesar_ReadingUserDictionaryAlphabet".
         private void Btn_CaesarText_Click(object sender, EventArgs e)
         {
             Panel_CaesarText.Visible = true;
@@ -215,7 +179,7 @@ namespace EnDec_File
             Panel_CaesarFileEncrypt.Visible = false;
             Panel_CaesarFileEncrypt.Enabled = false;
 
-            ReadingUserDictionaryAlphabet();
+            Reading_UserDictionary(CB_CaesarSelectAlphabet);
         }
 
         //Completed !!!
